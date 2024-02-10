@@ -1,0 +1,77 @@
+// // Define variables for colors
+// $primary-color: lightgray;
+// $secondary-color: #2ecc71;
+
+// // Define a mixin for box-shadow
+// @mixin box-shadow($x, $y, $blur, $color) {
+//     box-shadow: $x $y $blur $color;
+// }
+
+// // Base styles
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f0f0f0;
+//     color: #333;
+// }
+
+// .container {
+//     width: 80%;
+//     margin: 0 auto;
+// }
+
+// // Styles for header
+// header {
+//     background-color: "$primary-color";
+//     color: white;
+//     padding: 1rem 0;
+//     text-align: center;
+// }
+
+// // Navigation styles
+// nav {
+//     ul {
+//         list-style: none;
+//         padding: 0;
+
+//         li {
+//             display: inline;
+//             margin-right: 20px;
+
+//             a {
+//                 color: white;
+//                 text-decoration: none;
+
+//                 &:hover {
+//                     text-decoration: underline;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // Button styles using the box-shadow mixin
+// .button {
+//     display: inline-block;
+//     padding: 0.5rem 1rem;
+//     background-color: $secondary-color;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+
+//     &:hover {
+//         @include box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+//     }
+// }
+
+// // Responsive styles
+// @media (max-width: 768px) {
+//     .container {
+//         width: 90%;
+//     }
+
+//     // Adjustments for smaller screens
+//     header {
+//         font-size: 1.5rem;
+//     }
+// }

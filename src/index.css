@@ -1,0 +1,51 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(to bottom, #35ABF6, #103c50); */
+  background-image: linear-gradient(to bottom, #35ABF6, #63bee9);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+  
+  background-size: auto 90%;
+    /* Set the desired height (300 pixels in this example) */
+     background-repeat: no-repeat;
+    background-position: top; 
+    
+    
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'ProductSans-Regular';
+  src: 
+    
+    url('./assets/fonts/Product Sans Regular.ttf') format('woff');
+    
+    
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProductSans-Bold';
+  src: url('./assets/fonts/Product Sans Bold.ttf') format('woff2');
+   
+
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* url('./assets/fonts/Product Sans Bold.ttf') format('woff2'),
+url('./assets/fonts/Product Sans Italic.ttf') format('woff'),
+url('./assets/fonts/ProductSansBoldItalic.ttf') format('woff'); */

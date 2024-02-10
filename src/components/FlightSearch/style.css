@@ -1,0 +1,7 @@
+.searchform{
+    
+background-color: rgba(196, 151, 151, 0.5);
+    /* Red with 50% opacity */
+    filter: blur(8px);
+    /* Blur effect */
+}
