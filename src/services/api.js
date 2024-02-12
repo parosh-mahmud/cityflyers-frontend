@@ -1,11 +1,11 @@
 // api.js
 
-const BASE_URL = 'https://cityflyers.onrender.com/api'; // Your API base URL
-
+// const BASE_URL = 'http://localhost:5000/api'; // Your API base URL
+const BASE_URL = process.env.REACT_APP_API_URL;
 // Function to fetch airports based on the search query
 export const fetchAirports = async (searchQuery) => {
   try {
-    const response = await fetch(`${BASE_URL}/airports/airportList?query=${searchQuery}`);
+    const response = await fetch(`${BASE_URL}/api/airports/airportList?query=${searchQuery}`);
     if (response.ok) {
       const airportData = await response.json();
       return airportData;

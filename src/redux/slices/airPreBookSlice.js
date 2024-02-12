@@ -1,7 +1,7 @@
 // airPreBookSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-
+const BASE_URL = process.env.REACT_APP_API_URL
 const airPreBookSlice = createSlice({
   name: 'airPreBook',
   initialState: {
@@ -40,7 +40,7 @@ export const fetchAirPreBookResults = (formData) => async (dispatch) => {
   try {
     dispatch(setLoadingAirPreBookData());
 
-    const response = await axios.post('http://localhost:5000/api/airPreBook', formData);
+    const response = await axios.post(`${BASE_URL}/api/airPreBook`, formData);
 
    await dispatch(setAirPreBookSearchData(response.data));
     console.log(formData)

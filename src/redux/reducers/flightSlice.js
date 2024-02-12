@@ -4,7 +4,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 // flightSlice.js
-
+const BASE_URL = process.env.REACT_APP_API_URL
 const flightSlice = createSlice({
   name: 'flight',
   initialState: {
@@ -31,7 +31,7 @@ export const fetchFlightResults = (formData) => async (dispatch) => {
     dispatch(setLoadingFlightData());
 
     // Make the API call using formData
-    const response = await axios.post('http://localhost:5000/api/airSearch', formData);
+    const response = await axios.post(`${BASE_URL}/api/airSearch`, formData);
 
     // Dispatch the result to the store
     dispatch(setFlightSearchData(response.data));

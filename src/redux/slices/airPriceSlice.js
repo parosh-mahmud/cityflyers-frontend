@@ -1,7 +1,7 @@
 // airPriceSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-
+const BASE_URL = process.env.REACT_APP_API_URL
 const airPriceSlice = createSlice({
   name: 'airPrice',
   initialState: {
@@ -25,7 +25,7 @@ export const fetchAirPrice = (requestData) => async (dispatch) => {
   try {
     dispatch(setLoadingAirPrice());
 
-    const response = await axios.post('http://localhost:5000/api/airPrice', requestData);
+    const response = await axios.post(`${BASE_URL}/api/airPrice`, requestData);
 
     dispatch(setAirPriceData(response.data));
 
